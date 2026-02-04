@@ -64,7 +64,7 @@ function Contact() {
           <div>
             <h2 className="text-5xl font-bold text-[#f7cbc8] mb-8">Reviews</h2>
 
-            <div className="bg-[#a26767]  rounded-3xl p-8 shadow-xl mb-6">
+            <div className="bg-[#a26767] rounded-3xl p-8 shadow-xl mb-6 transition-transform duration-300 hover:scale-105">
               {reviews.length === 0 ? (
                 <p className="text-[#ffffff] text-center py-3 mt-2.5 px-3 rounded-2xl bg-[#c13b31]">
                   No reviews yet
@@ -75,14 +75,14 @@ function Contact() {
                     <Link
                       key={review.id}
                       to={`/reviews/${review.id}`}
-                      className="flex items-start gap-4 bg-white/20 backdrop-blur-sm p-4 rounded-2xl hover:bg-white/30 transition"
+                      className="flex items-start gap-4 bg-white/20 backdrop-blur-sm p-4 rounded-2xl hover:bg-white/30 transition-transform duration-300 transform hover:scale-105"
                     >
                       <div
-                        className={`w-12 h-12 rounded-full ${avatarColors[i]} flex items-center justify-center text-white font-bold flex-shrink-0`}
+                        className={`w-12 h-12 rounded-full ${avatarColors[i]} flex items-center justify-center text-white font-bold flex-shrink-0 transition-transform duration-300 transform hover:rotate-12`}
                       >
                         {review.name.charAt(0).toUpperCase()}
                       </div>
-                      <p className="text-white text-sm flex-1">
+                      <p className="text-white text-sm flex-1 transition-all duration-300 transform hover:text-gray-300">
                         {review.comment}
                       </p>
                     </Link>
@@ -96,7 +96,7 @@ function Contact() {
                   placeholder="Leave reviews here..."
                   value={formData.comment}
                   onChange={handleInputChange}
-                  className="w-full px-6 py-4 rounded-2xl resize-none mb-3 focus:outline-none focus:ring-2 focus:ring-white border border-dashed "
+                  className="w-full px-6 py-4 rounded-2xl resize-none mb-3 focus:outline-none focus:ring-2 focus:ring-white border border-dashed transition-all duration-300 hover:ring-2 hover:ring-[#ffbb99]"
                   rows="3"
                 />
                 <input
@@ -105,11 +105,11 @@ function Contact() {
                   placeholder="Your name"
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-6 py-3 rounded-2xl mb-3 focus:outline-none focus:ring-2 focus:ring-white border border-dashed"
+                  className="w-full px-6 py-3 rounded-2xl mb-3 focus:outline-none focus:ring-2 focus:ring-white border border-dashed transition-all duration-300 hover:ring-2 hover:ring-[#ffbb99]"
                 />
                 <button
                   type="submit"
-                  className="w-full bg-white text-[#b32a20] font-bold py-3 rounded-2xl hover:bg-[#542320] transition border"
+                  className="w-full bg-white text-[#b32a20] font-bold py-3 rounded-2xl hover:bg-[#542320] transition-all duration-500 transform active:scale-95"
                 >
                   Submit Review
                 </button>
@@ -123,7 +123,7 @@ function Contact() {
             <div className="space-y-6">
               <a
                 href="tel:+639123456789"
-                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
+                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"
               >
                 <div className="w-16 h-16 rounded-full border border-dashed border-black flex items-center justify-center shrink-0">
                   <span className="text-3xl">📞</span>
@@ -135,7 +135,7 @@ function Contact() {
 
               <a
                 href="mailto:eunice12rillon@gmail.com"
-                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
+                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"
               >
                 <div className="w-16 h-16 rounded-full border border-dashed border-black flex items-center justify-center flex-shrink-0">
                   <span className="text-3xl">📧</span>
@@ -149,7 +149,7 @@ function Contact() {
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
+                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"
               >
                 <div className="w-16 h-16 rounded-full border border-dashed border-black flex items-center justify-center flex-shrink-0">
                   <span className="text-3xl">✖️</span>
@@ -163,7 +163,7 @@ function Contact() {
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition"
+                className="flex items-center gap-6 bg-[#e3bcb9] backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:scale-105"
               >
                 <div className="w-16 h-16 rounded-full border border-dashed border-black flex items-center justify-center shrink-0">
                   <span className="text-3xl">💬</span>

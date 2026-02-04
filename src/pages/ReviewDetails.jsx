@@ -30,10 +30,13 @@ function ReviewDetails() {
       <div className="max-w-4xl mx-auto">
         <Link
           to="/contact"
-          className="inline-flex items-center text-indigo-900 hover:text-indigo-700 mb-8 text-lg font-semibold"
+          className="inline-flex items-center text-white hover:text-purple-200 mb-8 text-lg font-semibold
+                   transition-all duration-300
+                   hover:scale-110
+                   hover:-translate-x-2"
         >
           <svg
-            className="w-6 h-6 mr-2"
+            className="w-6 h-6 mr-2 transition-transform duration-300 group-hover:-translate-x-1"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -48,8 +51,17 @@ function ReviewDetails() {
           Back to Contact
         </Link>
 
-        <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
-          <div className="bg-linear-to-r from-[#ffbbb6] to-[#b32a20] p-12 text-white">
+        <div
+          className="bg-white rounded-3xl shadow-2xl overflow-hidden
+                      transition-all duration-500
+                      hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)]
+                      hover:-translate-y-2"
+        >
+          <div
+            className="bg-linear-to-r from-[#ffbbb6] to-[#b32a20] p-12 text-white
+                        transition-all duration-300
+                        hover:from-[#ff9d96] hover:to-[#a01810]"
+          >
             <div className="flex items-center gap-6">
               <div className="w-24 h-24 rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center text-4xl font-bold">
                 {review.name.charAt(0).toUpperCase()}
@@ -64,7 +76,7 @@ function ReviewDetails() {
             <h2 className="text-sm font-semibold text-gray-500 uppercase mb-4">
               Full Review
             </h2>
-            <p className="text-2xl text-[#ffffff] leading-relaxed whitespace-pre-wrap mb-8">
+            <p className="text-2xl text-[#ffffff] leading-relaxed whitespace-pre-wrap mb-8 transition-all duration-500 transform hover:scale-105">
               {review.comment}
             </p>
 

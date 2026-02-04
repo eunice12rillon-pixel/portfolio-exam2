@@ -28,14 +28,20 @@ function Skills() {
   return (
     <div className="min-h-[calc(100vh-80px)] py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-6xl font-bold text-center text-white mb-16">
+        <h1 className="text-6xl font-bold text-center text-[#d39e9e]u9lo,999999999999,9 mb-16">
           Skills
         </h1>
-
         <div className="grid grid-cols-4 gap-4 mb-12">
           {skills.map((skill, i) => (
-            <div key={i} className="text-center">
-              <div className="w-24 h-24 mx-auto bg-transparent rounded-full flex items-center justify-center text-5xl shadow-lg mb-3">
+            <div key={i} className="text-center group">
+              <div
+                className="w-24 h-24 mx-auto bg-transparent rounded-full flex items-center justify-center text-5xl shadow-lg mb-3
+                            transition-all duration-300 ease-in-out
+                            group-hover:scale-125 
+                            group-hover:shadow-2xl
+                            group-hover:-translate-y-2
+                            cursor-pointer"
+              >
                 {skill.icon}
               </div>
             </div>
@@ -46,7 +52,13 @@ function Skills() {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-lg"
+              className="bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-lg
+                       transition-all duration-300 ease-in-out
+                       hover:bg-white/80
+                       hover:shadow-2xl
+                       hover:-translate-y-2
+                       hover:scale-105
+                       cursor-pointer"
             >
               <p className="text-gray-700 text-center text-sm leading-relaxed">
                 {skill.desc}
