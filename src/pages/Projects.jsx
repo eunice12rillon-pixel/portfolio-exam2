@@ -64,7 +64,7 @@ function Projects() {
               <div
                 key={i}
                 className="relative bg-black text-white rounded-3xl overflow-hidden p-8 hover:bg-gray-900 transition transform hover:-translate-y-2 shadow-lg cursor-pointer mx-auto"
-                style={{ width: "90%", height: "400px" }} // Adjusted dimensions
+                style={{ width: "90%", height: "400px" }} 
               >
                 <iframe
                   src={project.link}

@@ -28,12 +28,18 @@ function Skills() {
   return (
     <div className="min-h-[calc(100vh-80px)] py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-6xl font-bold text-center text-[#d39e9e]u9lo,999999999999,9 mb-16">
+        <h1 className="text-6xl font-bold text-center text-[#be8e8e] mb-16">
           Skills
         </h1>
         <div className="grid grid-cols-4 gap-4 mb-12">
           {skills.map((skill, i) => (
-            <div key={i} className="text-center group">
+            <div
+              key={i}
+              className="text-center group"
+              style={{
+                animation: `slideInUp 0.6s ease-out ${i * 0.15}s both`,
+              }}
+            >
               <div
                 className="w-24 h-24 mx-auto bg-transparent rounded-full flex items-center justify-center text-5xl shadow-lg mb-3
                             transition-all duration-300 ease-in-out
@@ -67,6 +73,19 @@ function Skills() {
           ))}
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slideInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 }

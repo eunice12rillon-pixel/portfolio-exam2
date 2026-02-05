@@ -2,11 +2,15 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header className="bg-linear-to-r from-[#b32a20] to-[#2c0b09] text-white shadow-lg font-mono">
+    <header className="bg-linear-to-r from-[#120707] to-[#b1170f] text-white shadow-lg font-mono">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-white">
-            Eunice
+          <Link to="/">
+            <img
+              src="/Logo.PNG" 
+              alt="Logo"
+              className=" h-10" 
+            />
           </Link>
 
           <div className="flex gap-8">

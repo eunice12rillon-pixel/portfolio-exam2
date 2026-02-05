@@ -14,7 +14,7 @@ function Home() {
         </div>
 
         <h1 className="text-6xl font-bold text-white mb-7 transition-all duration-700 ease-in-out transform hover:text-red-300 hover:translate-y-2">
-          Nesxiss
+          Eunice Sta.Romana
         </h1>
         <p className="text-2xl text-white transition-all duration-700 ease-in-out transform hover:translate-y-1">
           Aspiring Student Creative Developer

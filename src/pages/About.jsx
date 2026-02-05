@@ -3,7 +3,7 @@ function About() {
     <div className="min-h-[calc(100vh-80px)] py-16 px-6">
       <div className="max-w-4xl mx-auto">
         <h1
-          className="text-4xl font-bold text-center text-white mb-16
+          className="text-4xl font-bold text-center text-[#be8e8e] mb-16
                      transition-all duration-300
                      hover:scale-110 
                      hover:text-purple-200"
@@ -82,7 +82,7 @@ function About() {
                            transition-colors duration-300
                            hover:text-black"
             >
-              Unity
+              Procreate
             </span>
             , I seamlessly integrate design and technology to bring ideas to
             life.
